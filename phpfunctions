@@ -1,0 +1,14 @@
+//Find the length of a string
+function lengthOfastring($string)
+{
+    $count = 0;
+    for($i=0; $i<66000; $i++)
+    {
+       if(@$string[$i] != "") {
+            $count++;
+       }
+       else{ break;
+       }
+    }
+    return $count;
+}
