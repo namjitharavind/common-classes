@@ -8,3 +8,12 @@ function randomValFromArray(array){
 var rand=Math.floor(Math.random()*array.length);
 return rand;
 }
+
+function findValIndexFromArrayByValue(array, value) {
+
+  for(var i=0; i<array.length; i++) {
+    if (array[i] == value) return i;
+  }
+   
+  return -1;
+}
