@@ -46,8 +46,25 @@ function camelize(str){
 }
 return word;
 }
+  /*
+  An object has a className property which keep it's class names delimited by spaces:
+  var obj={
+    className:'open menu'
+  }
+  Write a function removeClass(obj,cls) which removes a class cls if it is set:
+  removeClass(obj,'open')// obj.className ='menu'
+  removeClass(obj,'blabla')// no changes (no class to remove)
+  Solution:
+  The solution is to split the className and loop over pieces. If there is a match , then remove it from the array and join the 
+  array back to the end.
+  */
   
-  
+  function removeClass(elam,cls){
+    for(var c=elam.className.split(' '),i=c.length-1; i>=0; i--){
+      if(c[i]==cls) c.splice(i,1)
+    }
+    elam.className=c.join(' ')
+  }
   
 
 }
