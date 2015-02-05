@@ -17,3 +17,37 @@ function findValIndexFromArrayByValue(array, value) {
    
   return -1;
 }
+//An object has a className property which keeps it's class names delimited by spaces:
+/*
+var obj ={
+  className:'open menu'
+}
+Write a function addClass(obj,cls) which adds a class cls, but only if it doesnt yet exist
+*/
+function addClass(){
+  for(var c=elam.className.split(' '),i=c.length-1; i>=0;i--){
+    if(c[i]==cls) return
+    elem.className+=' '+cls
+  }
+  
+  /*
+  Create a function camelize(str) which transform a string from "my-short-string" to "myShortString".
+  Such functions may be useful when operating with CSS.
+  */
+function camelize(str){
+  var arr=str.split('-');
+  var word='';
+  for(i=1;i<arr.length;i++){
+    word+=arr[0];
+    word+=arr[i].charAt(0).toUpperCase();
+      for(j=1;j<arr[i].length;j++){
+        word+=arr[i].charAt(j);
+      }
+}
+return word;
+}
+  
+  
+  
+
+}
