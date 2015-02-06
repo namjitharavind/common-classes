@@ -68,3 +68,7 @@ return word;
   
 
 }
+//The function to check for numericality:
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n)
+}
